@@ -8,4 +8,14 @@ When used to launch a GUI application from terminal it hides the terminal emulat
 #### Usage
 `swallow application_name [arguments]`
 
+#### Installation
+```  
+git clone https://github.com/brownbishop/swallow
+cd swallow  
+sudo(doas) make install
+```  
+
+#### Removal
+From the swallow directory run: 
+` sudo make uninstall` 
 
