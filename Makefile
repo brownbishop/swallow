@@ -8,7 +8,7 @@ build: $(TARGET)
 	$(CC) $(CPPFLAGS) $(SOURCE) -o $(TARGET) 
 
 install: build 
-	cp $(PREFIX)$(TARGET)
+	cp $(TARGET) $(PREFIX)$(TARGET)
 
 uninstall: 
 	rm -f $(PREFIX)$(TARGET)
