@@ -1,19 +1,19 @@
 CC=g++
 CPPFLAGS=-lX11 -Wall -Wextra -fPIE -O2 -D_FORTIFY_SOURCE=2
-SOURCE=swallow.cpp 
-TARGET=swallow 
-PREFIX=/usr/bin/
+SOURCE=swallow.cpp
+TARGET=swallow
+PREFIX=/usr/loca/bin/
 
-build: $(TARGET) 
-	$(CC) $(CPPFLAGS) $(SOURCE) -o $(TARGET) 
+build: $(TARGET)
+	$(CC) $(CPPFLAGS) $(SOURCE) -o $(TARGET)
 
-install: build 
+install: build
 	cp $(TARGET) $(PREFIX)$(TARGET)
 
-uninstall: 
+uninstall:
 	rm -f $(PREFIX)$(TARGET)
 
-clean: 
+clean:
 	rm -f $(TARGET)
 
 .PHONY: install uninstall clean
