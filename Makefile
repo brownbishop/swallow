@@ -1,6 +1,6 @@
-CC=g++
+CC=cc
 CPPFLAGS=-lX11 -Wall -Wextra -fPIE -O2 -D_FORTIFY_SOURCE=2
-SOURCE=swallow.cpp
+SOURCE=swallow.c
 TARGET=swallow
 PREFIX=/usr/local/bin/
 
