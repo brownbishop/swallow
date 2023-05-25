@@ -1,3 +1,4 @@
+.POSIX
 #CC=
 CPPFLAGS=-lX11 -Wall -Wextra -fPIE -O2 -D_FORTIFY_SOURCE=2
 SOURCE=swallow.c
@@ -16,4 +17,4 @@ uninstall:
 clean:
 	rm -f $(TARGET)
 
-.PHONY: install uninstall clean
+.PHONY: build install uninstall clean
