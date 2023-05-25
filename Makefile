@@ -2,7 +2,7 @@ CC=g++
 CPPFLAGS=-lX11 -Wall -Wextra -fPIE -O2 -D_FORTIFY_SOURCE=2
 SOURCE=swallow.cpp
 TARGET=swallow
-PREFIX=/usr/loca/bin/
+PREFIX=/usr/local/bin/
 
 build: $(TARGET)
 	$(CC) $(CPPFLAGS) $(SOURCE) -o $(TARGET)
